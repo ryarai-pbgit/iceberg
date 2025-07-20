@@ -1,0 +1,92 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "0ef26120-4597-4f4e-aed4-a60770ab743b",
+  "location" : "s3://myicebergbucket20250720160000/customer_iceberg.GGokyeYG/",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1753000744856,
+  "last-column-id" : 8,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "C_CUSTKEY",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "C_NAME",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "C_ADDRESS",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "C_NATIONKEY",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "C_PHONE",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "C_ACCTBAL",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 7,
+      "name" : "C_MKTSEGMENT",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "C_COMMENT",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "format-version" : "2"
+  },
+  "current-snapshot-id" : 6459076906609002355,
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 6459076906609002355,
+    "timestamp-ms" : 1753000744856,
+    "manifest-list" : "s3://myicebergbucket20250720160000/customer_iceberg.GGokyeYG/metadata/snap-1753000744856000000-2ca17373-0237-4d57-ab33-767b999de5be.avro",
+    "schema-id" : 0,
+    "summary" : {
+      "added-files-size" : "2048",
+      "manifests-kept" : "0",
+      "operation" : "append",
+      "total-files-size" : "2048",
+      "added-records" : "1",
+      "added-data-files" : "1",
+      "manifests-replaced" : "0",
+      "total-data-files" : "1",
+      "manifests-created" : "1",
+      "total-records" : "1"
+    }
+  } ],
+  "snapshot-log" : [ {
+    "snapshot-id" : 6459076906609002355,
+    "timestamp-ms" : 1753000744856
+  } ]
+}
