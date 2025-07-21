@@ -80,7 +80,7 @@ CREATE OR REPLACE EXTERNAL VOLUME iceberg_external_volume_glue
             NAME = 'my-s3-glue-ap-northeast-1'
             STORAGE_PROVIDER = 'S3'
             STORAGE_BASE_URL = 's3://myicebergbucket202507202010/'
-            STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::981111680239:role/iceberg_role'
+            STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::<account id>:role/iceberg_role'
             STORAGE_AWS_EXTERNAL_ID = 'iceberg_table_external_id'
          )
       );
@@ -93,8 +93,8 @@ CREATE OR REPLACE CATALOG INTEGRATION glueCatalogInt
   CATALOG_SOURCE = GLUE
   CATALOG_NAMESPACE = 'my_database'
   TABLE_FORMAT = ICEBERG
-  GLUE_AWS_ROLE_ARN = 'arn:aws:iam::981111680239:role/snowflake_glue_role'
-  GLUE_CATALOG_ID = '981111680239'
+  GLUE_AWS_ROLE_ARN = 'arn:aws:iam::<account id>:role/snowflake_glue_role'
+  GLUE_CATALOG_ID = '<account id>'
   GLUE_REGION = 'ap-northeast-1'
   ENABLED = TRUE;
 
